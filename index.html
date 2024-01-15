@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Agbalumo' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Averia Sans Libre' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Belanosima' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Boogaloo' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Cagliostro' rel='stylesheet'>
+  <link href="style.css" rel="stylesheet"></link>
+  <style>
+    
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light " style="background-color:rgb(129, 28, 90);">
+    <div class="container">
+      <a class="navbar-brand" href="#"
+        style="color: rgb(240, 231, 231);font-size:27px;font-family: 'Boogaloo';">Kidspace</a>
+
+
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" style="color: white;" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white;" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white;" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white;" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mr-auto">
+        <span><i class="bi bi-person-fill" style="font-size: 30px;color:white;margin-right: 8px;"></i></span>
+        <span><i class="bi bi-cart-check-fill modalbutton" style="font-size: 30px;color: white;"></i></span>
+      </div>
+    </div>
+
+  </nav>
+  <header style="height:30px;background-color: rgb(209, 209, 209);padding:5px;">
+    <h6 style="font-size: small;margin-left: 10px;object-fit: contain;">Collections > plushies >Unicorns </h6>
+  </header>
+
+  <div class="outercontainer">
+    <div class="mycontainer">
+
+      <div id="group1" class="group1">
+        <div class="content1" onclick="changeimage(0)">
+          <div>
+            <img id="image1" src="images/yellow.jpeg" alt="content1">
+          </div>
+        </div>
+        <div class="content2" onclick="changeimage(1)">
+          <div>
+            <img id="image1" src="images/pink.jpeg" alt="content2" style="border:black solid 2px">
+          </div>
+        </div>
+
+        <div class="content3" onclick="changeimage(2)">
+          <div>
+            <img id="image1" src="images/orange.jpeg" alt="content3">
+          </div>
+        </div>
+        <div class="content4" onclick="changeimage(3)">
+          <div>
+            <img id="image1" src="images/green.jpeg" alt="content4">
+          </div>
+
+        </div>
+
+        <div class="content5" onclick="changeimage(4)">
+          <div>
+            <img id="image1" src="images/unicorn.jpeg" alt="content5">
+          </div>
+        </div>
+      </div>
+      <div id="group2">
+        <div class="holder">
+          <img id="mainimage" src="Images/pink.jpeg" style="border-radius: 25px;border:solid gray ">
+        </div>
+      </div>
+
+      <div id="group3">
+        <div>
+          <h1 style="font-family: 'Boogaloo'">Cute Unicorn plush toys , Kidspace Toy Store, 25cm</h1>
+        </div>
+        <div><span>4.6</span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          2,180 ratings
+        </div>
+        <div class="price"> <b>&#x20B9;</b><b style="font-size:30px;font-family: 'Agbalumo'">499</b>(includes all tax)
+        </div>
+        <h4> Colours : </h4>
+        <div style="display: inline;">
+          <div class="colorspan" style="background-color:rgb(244, 157, 189);" onclick="changeimage(1)"></div>
+          <div class="colorspan" style="background-color:rgb(242, 242, 165);" onclick="changeimage(0)"></div>
+          <div class="colorspan" style="background-color:rgb(255, 196, 174);" onclick="changeimage(2)"></div>
+          <div class="colorspan" style="background-color:rgb(185, 251, 229)" onclick="changeimage(3)"></div>
+        </div>
+        <div class="info" style="position: static;">
+          <p> <b>Description:</b>
+          <ul>
+            <li>Only the finest of quality materials are used to craft our product</li>
+            <li>Shed proof and soft material</li>
+            <li>25 cm perfect for your little one</li>
+            <li>birthday gift, valentines day gift, gitf for friend</li>
+            <li>share love and...
+              <a rel="noopener" target="_parent" href="#description" id="seemore1">see more</a>
+            </li>
+          </ul>
+          </p>
+        </div>
+
+        <div class="modal text-center" id="mymodal">
+          <p onclick="closemodal()"><img src="images/x-lg.svg" class="xicon"></img></p>
+          <p style="margin-top: 10%;margin-left: 25px;"> Added to cart succesfully</p>
+          <i class="bi bi-check2-circle checkcircle"></i>
+          <button id="viewcart" class="modalbutton" style="background-color: rgb(39, 234, 101);"><i
+              class="bi bi-cart3"></i> View cart</button>
+        </div>
+
+        <div style="border-top: solid gray 1px;padding-top: 5% ;">
+          <a href="#"
+            style="position: relative;top: max(-10vw,-50px);left:60%;background-color: rgb(255, 255, 255);width:fit-content"
+            id="seemore2"><b>See more</b></a>
+          <button id="addtocart" class="b1" onclick="openmodal()"><i class="bi bi-cart3"></i> Add to Cart</button>
+          <button id="buynow" class="b2"> Buy now</button>
+        </div>
+      </div><!-- group 3  -->
+    </div><!-- mycontainer  -->
+
+    <div class="myblock">
+
+      <div class="aboutproduct" style="display: flex;flex-wrap: wrap;">
+        <div style="max-width: 740px;min-width: 60%; margin:20px;">
+          <h3 style=" font-family: 'Belanosima'">About The Product:</h3>
+          <div style="display: flex;">
+            <ul>
+
+              <li><b style="font-family: 'Averia Sans Libre'">Magical Companions: </b>Meet our enchanting unicorn
+                plushies, designed to be your
+                magical companions. </li>
+              <li><b></b>Our unicorn plushies are crafted with precision and attention
+                to detail.</li>
+              <li><b style="font-family: 'Averia Sans Libre'">Vibrant Colors:</b>Brighten up your day with our unicorn
+                plushies
+                featuring vibrant and eye-catching colors.
+              </li>
+              <li><b style="font-family: 'Averia Sans Libre'">Premium Quality:</b> Made from premium materials, they
+                boast durability and a luxurious feel.
+              </li>
+              <li><b style="font-family: 'Averia Sans Libre'">Perfect Gift:</b>Looking for the perfect gift? Our unicorn
+                plushies are a magical
+                choice for birthdays, celebrations, or just because.
+              </li>
+              <li><b style="font-family: 'Averia Sans Libre'">Imaginative Play:</b>
+                Whether it's a magical tea party or a journey through fantastical realms,
+                these plushies inspire creativity and endless adventures.
+              </li>
+              <li><b style="font-family: 'Averia Sans Libre'">Adorable Design:</b>Fall in love with the adorable design
+                of our unicorn plushies.
+              </li>
+              <li><b style="font-family: 'Averia Sans Libre'">Safe and Non-Toxic:</b>Rest easy knowing our unicorn
+                plushies meet strict
+                safety standards, crafted from non-toxic materials.
+              </li>
+              <li><b style="font-family: 'Averia Sans Libre'">Collector's Item:</b>For unicorn enthusiasts and
+                collectors,
+                our plushies are a must-have.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div style="margin-left:auto;margin-right:auto">
+          <img src="images/uniplush.jpeg" style="max-width:500px;max-height:500px;">
+        </div>
+      </div><!--  about product -->
+
+      <div class="aboutseller" style="margin: 2%; margin-top: 5%;width: 100%;">
+        <dl>
+          <dt>
+            <h2 style=" font-family: 'Belanosima'">About Kidspace Toy Store:</h2>
+          </dt>
+          <dd>
+            Welcome to Kidsplace, where enchantment meets quality! We
+            take pride in our products that capture the hearts of all ages.
+          </dd>
+        </dl>
+        <div style="width:100%;display: flex;flex-direction: row;flex-wrap: wrap;justify-content:flex-start;">
+          <img src="images/image-2 (1).jpeg" class="sellerimages" style="margin:3%;">
+          <img src="images/image-2 (2).jpeg" class="sellerimages" style="margin:3%;">
+        </div>
+        <dl>
+          <dt style=" font-family: 'Belanosima';font-size: larger;">Our Commitment:</dt>
+          <dd>At Kidspace, we believe in the magic of bringing joy and
+            smiles into your life. We are committed to delivering exceptional
+            products that are not only whimsical but also crafted with the
+            highest standards of quality and safety.
+
+          </dd>
+          <dt style=" font-family: 'Belanosima';font-size: larger;">Passion for Magic:</dt>
+          <dd>What sets us apart is our genuine passion for all things magical.
+            From the intricate details of our unicorn plushies to
+            the vibrant colors that ignite the imagination, every
+            product is a testament to our love for creating enchanting
+            experiences.
+          </dd>
+          <dt style=" font-family: 'Belanosima';font-size: larger;">Customer-Centric Approach:</dt>
+          <dd>Your satisfaction is our top priority.
+            We are dedicated to providing excellent customer service,
+            addressing your inquiries promptly, and ensuring
+            a delightful shopping experience with us.
+          </dd>
+        </dl>
+
+        <p>Rest assured, our unicorn plushies are made from non-toxic,
+          child-safe materials. We prioritize the safety of our
+          customers, making our plushies suitable for everyone,
+          including the little ones who want to embark on magical
+          adventures.</p>
+        <div style="width:95%">
+          <img src="images/image-3.jpeg" 
+            style="margin-left:auto; max-width: 970px;max-height:300px ;margin-right:auto;">
+        </div>
+        <p> By choosing Kidspace, you're not just buying a product;
+          you're joining a community that celebrates the magic of unicorns.
+          Connect with us on social media, share your magical moments, and
+          become part of our ever-growing family.
+        </p>
+
+
+      </div><!-- About Seller -->
+
+
+
+    </div><!-- My block -->
+
+    <div id="cart" class="box">
+
+      <div style="border-bottom: 1px solid rgb(177, 177, 177); background-color: rgb(46, 85, 158);">
+        <p style="font-size: 25px; color: rgb(255, 255, 255);">
+          <img src="images/x-lg.svg" class="xicon2 modalbutton " style="margin-left: 0px;">
+          </img>
+          <b class="text-center" style="margin-left: 25px;">Cart</b>
+        </p>
+      </div>
+      <div class="myitem" style="width:95%;height:15%;background-color:rgb(234, 229, 221);border:solid 1px black;
+      margin: auto;margin-top: 10px;display: grid;border-radius: 5px;grid-template-columns: 60% 40%;">
+        <img src="images/pink.jpeg" style="width:75%;height:14.5vh;border:solid 1px lightgrey;background-color: white;">
+        <p style="color: rgb(0, 0, 0);">Quantity : 1<br>
+          Price: &#x20B9;499</p>
+      </div>
+      <div>
+        <p style="position: absolute;bottom: 7%;right:10px;color: rgb(0, 0, 0);font-size: larger;">Total:&#x20B9;499</p>
+        <button class="cartbutton" style="border-radius: 0px;background-color: rgb(77, 108, 165); color: white;">Procced</button>
+      </div>
+
+    </div><!-- My cart  -->
+
+
+
+    <div class="item" style="border-top: 2px solid lightgray;padding:10px">
+      <h2 style="margin: 3% 0px 30px 5%; font-family: 'Belanosima';font-size:30px;"> Similar Products:</h2>
+
+      <div class="container">
+
+        <div class="item-container scrollbar">
+
+          <div class="item-card">
+
+            <a href="#">
+              <img src="images/blackball.jpeg" style="object-fit: contain;" alt="item1" width="150" height="150px"
+                class="item-banner">
+            </a>
+            <div class="itemtitle">
+              <h3 class="item-title text-center">Black Ball</h3>
+              <h4 class="text-center" style="font-family: 'Agbalumo'">&#x20B9; 367</h4>
+            </div>
+          </div>
+
+          <div class="item-card">
+
+            <a href="#">
+              <img src="images/giffy.jpeg" style="object-fit: contain;height: 150px;" alt="item1" width="150" height="150px"
+                class="item-banner">
+            </a>
+
+            <h3 class="item-title text-center">Giffy</h3>
+            <h4 class="text-center" style="font-family: 'Agbalumo'"> &#x20B9;567</h4>
+
+          </div>
+
+          <div class="item-card">
+
+            <a href="#">
+              <img src="images/cow.jpeg" style="object-fit: contain;" alt="item1" width="150" height="150px"
+                class="item-banner">
+            </a>
+
+            <h3 class="item-title text-center">Mr.Cow</h3>
+            <h4 class="text-center" style="font-family: 'Agbalumo'"> &#x20B9;420</h4>
+
+          </div>
+          <div class="item-card">
+
+            <a href="#">
+              <img src="images/avocado.jpeg" style="object-fit: contain;" alt="item1" width="150" height="150px"
+                class="item-banner">
+            </a>
+
+            <h3 class="item-title text-center">avocado</h3>
+            <h4 class="text-center" style="font-family: 'Agbalumo'"> &#x20B9;367</h4>
+
+          </div>
+          <div class="item-card">
+
+            <a href="#">
+              <img src="images/cloudy.jpeg" style="object-fit: contain;" alt="item1" width="150" height="150px"
+                class="item-banner">
+            </a>
+
+            <h3 class="item-title text-center">cloudy</h3>
+            <h4 class="text-center" style="font-family: 'Agbalumo'">&#x20B9;400</h4>
+
+          </div>
+
+          <div class="item-card">
+
+            <a href="#">
+              <img src="images/sunflower.jpeg" style="object-fit: contain;" alt="item1" width="150" height="150px"
+                class="item-banner">
+            </a>
+
+            <h3 class="item-title text-center">sunflower</h3>
+            <h4 class="text-center" style="font-family: 'Agbalumo'">&#x20B9;550</h4>
+
+          </div>
+
+          <div class="item-card">
+
+            <a href="#">
+              <img src="images/squishy.jpeg" style="object-fit: contain;" alt="item1" width="150" height="150px"
+                class="item-banner">
+            </a>
+
+            <h3 class="item-title text-center">squishy</h3>
+            <h4 class="text-center" style="font-family: 'Agbalumo'">&#x20B9;250</h4>
+
+          </div>
+          <div class="item-card">
+
+            <a href="#">
+              <img src="images/thundercloud.jpeg" style="object-fit: contain;" alt="item1" width="150" height="150px"
+                class="item-banner">
+            </a>
+
+            <h3 class="item-title text-center">Thunder</h3>
+            <h4 class="text-center" style="font-family: 'Agbalumo'">&#x20B9;499</h4>
+
+          </div>
+
+
+          <div class="item-card">
+
+            <a href="#">
+              <img src="images/pinkpudding.jpeg" style="object-fit: contain;" alt="item1" width="150" height="150px"
+                class="item-banner">
+            </a>
+
+            <h3 class="item-title text-center">Pudding</h3>
+            <h4 class="text-center" style="font-family: 'Agbalumo'">&#x20B9;399</h4>
+
+          </div>
+
+          <div class="item-card">
+
+            <a href="#">
+              <img src="images/pinkbunny.jpeg" style="object-fit: contain;" alt="item1" width="150" height="150px"
+                class="item-banner">
+            </a>
+
+            <h3 class="item-title text-center">Pinky</h3>
+            <h4 class="text-center" style="font-family: 'Agbalumo'">&#x20B9;450</h4>
+
+          </div>
+
+          <div class="item-card">
+
+            <a href="#">
+              <img src="images/longcat.jpeg" style="object-fit: contain;" alt="item1" width="150" height="150px"
+                class="item-banner">
+            </a>
+
+            <h3 class="item-title text-center">long Cat</h3>
+            <h4 class="text-center" style="font-family: 'Agbalumo'">&#x20B9;600</h4>
+
+          </div>
+
+          <div class="item-card">
+
+            <a href="#">
+              <img src="images/cutie1.jpeg" style="object-fit: contain;" alt="item1" width="150" height="150px"
+                class="item-banner">
+            </a>
+
+            <h3 class="item-title text-center">Cuties</h3>
+            <h4 class="text-center" style="font-family: 'Agbalumo'">&#x20B9;370</h4>
+
+          </div>
+
+          <div class="item-card">
+
+            <a href="#">
+              <img src="images/bbuny.jpeg" style="object-fit: contain;" alt="item1" width="150" height="150px"
+                class="item-banner">
+            </a>
+
+            <h3 class="item-title text-center">B Bunnny</h3>
+            <h4 class="text-center" style="font-family: 'Agbalumo'">&#x20B9;545</h4>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div><!-- item container -->
+
+
+    <div class="ratings" style="border-top: 2px solid rgb(181, 179, 179);padding:15px; margin:4%">
+      <h2 style="font-family: 'Belanosima'">See what our customers have to say..</h2>
+      <div class="ratingbox">
+        <div class="col1">
+          <div><span>4.6</span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            2,180 ratings
+          </div>
+
+
+          <div class="emojibox text-center" style="margin-bottom: 8%;">
+            <div class="row">
+              <div class="side">
+                <div><i class="bi bi-emoji-laughing emoji" ></i></div>
+              </div>
+              <div class="middle">
+                <div class="bar-container " style="object-fit: contain;margin-top:15px;">
+                  <div class="bar-5 bars" style="width: 80%;height: 18px;
+                  background-color: #1daf68;"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div style="font-family: 'Agbalumo'">1652</div>
+              </div>
+              <div class="side">
+                <div><i class="bi bi-emoji-smile emoji"></i></div>
+              </div>
+              <div class="middle">
+                <div class="bar-container" style="margin-top:15px;">
+                  <div class="bar-4 bars" style="width: 9%;
+                  height: 18px;
+                  background-color: #e2db52;" ></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div style="font-family: 'Agbalumo'">230</div>
+              </div>
+              <div class="side">
+                <div><i class="bi bi-emoji-neutral emoji"></i></div>
+              </div>
+              <div class="middle">
+                <div class="bar-container" style="margin-top:15px;">
+                  <div class="bar-3 bars" style="width: 3%;
+                  height: 18px;
+                  background-color: #00aeff;"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div style="font-family: 'Agbalumo'">72</div>
+              </div>
+              <div class="side">
+                <div><i class="bi bi-emoji-frown emoji"></i></div>
+              </div>
+              <div class="middle">
+                <div class="bar-container" style="margin-top:15px;">
+                  <div class="bar-2 bars" style="width:2%;
+                  height: 18px;
+                  background-color: #ff6200;"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div style="font-family: 'Agbalumo'">60</div>
+              </div>
+              <div class="side">
+                <div><i class="bi bi-emoji-angry emoji"></i></div>
+              </div>
+              <div class="middle">
+                <div class="bar-container" style="margin-top:15px;">
+                  <div class="bar-1 bars" style="width:6%;height: 18px;
+                  background-color: #ff0000;"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div style="font-family: 'Agbalumo'">170</div>
+              </div>
+            </div>
+            
+          </div><!-- Emojibox -->
+
+
+
+
+         
+        </div>
+
+        <div class="col2" style="max-width: 700px;min-width:45%;border:solid rgb(0, 0, 0) 3px;padding:4%;border-radius: 15px;">
+          <span style="border:solid rgb(142, 139, 139) 2px;padding:8px;border-radius:50%;width:50px;height:50px">
+            <i class="bi bi-person-fill" style="color: rgb(247, 119, 141);font-size: 30px"></i></span>  <span style="font-size: 25px;">Vero</span>
+          <div> <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <p>I recently purchased a unicorn plushie from Kidspace Toy Store.
+            The attention to detail and vibrant colors of the plushie are
+            truly captivating.The plushie's soft and shed-proof material makes
+            it a perfect companion for both children and adults.
+            Its 25cm size is just right and it has become an instant
+            favorite .
+            The quality is exceptional,and the seamless online shopping
+            experience on the Kidspace website made the entire process
+            enjoyable</p>
+        </div><!-- col2  -->
+      </div>
+    </div><!--   Ratings -->
+
+
+  </div><!--  Outercontainer  -->
+  <footer style="background-color: rgb(210, 214, 214);height:30px">
+
+    <div style="font-size: small;" class="text-center">
+
+    
+
+        <p class="text-center" style="float: left;">Copyright ©2024Kidspace
+
+ 
+
+     
+
+        <a href="#" class="text-dark " style="margin-left: 10px;">Terms of Use</a>
+
+        <span class="text-muted " class="text-center">|</span>
+
+        <a href="#" class="text-dark text-center">Privacy Policy</a>
+
+      </p>
+
+    </div>
+
+  </footer>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>
